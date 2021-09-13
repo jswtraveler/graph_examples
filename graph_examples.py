@@ -39,7 +39,7 @@ plt.axhline(y=0, color='red')
 plt.show()
 plt.close()
 
-
+##Compare shortage errors
 fig, ax = plt.subplots(figsize=(20,10))
 sns.boxplot(x='fleet', y='shortage', hue = 'method'
 , data=shortage_box[(shortage_box.dt>=pd.to_datetime('2020-11-24')) &
